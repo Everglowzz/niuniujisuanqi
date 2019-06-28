@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="michaellee.mortgagecalculator">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> <!-- 有米 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShowActivity">
+        </activity>
+        <activity
+            android:name=".ActivityWeb1"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ActivityWeb2"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ActivityWeb3"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ActivityWeb4"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ActivityWeb5"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity_Splash_Ad"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Activity_Splash"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".GateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activity_Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name=".Activity_Result"
+            android:screenOrientation="portrait"
+            android:theme="@style/TextStyle"/>
+        <activity
+            android:name=".Activity_Result_Combination"
+            android:screenOrientation="portrait"
+            android:theme="@style/TextStyle"/>
+        <activity
+            android:name=".Activity_Help"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+ 
+    </application>
+
+</manifest>
